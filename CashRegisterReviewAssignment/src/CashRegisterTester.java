@@ -6,6 +6,8 @@ public class CashRegisterTester
 	{
 		CashRegister register = new CashRegister();
 		final double SENTINEL = -1;
+		final double DISCOUNT = .10;
+		final double MINIMUMPURCHASE = 50;
 		double itemValue=0;
 		Scanner scan =  new Scanner(System.in);
 		while(itemValue!=SENTINEL)
@@ -17,6 +19,7 @@ public class CashRegisterTester
 				register.recordPurchase(itemValue);
 			}
 		}
+		register.calcDiscount(DISCOUNT, MINIMUMPURCHASE);
 		System.out.println("Please enter payment.");
 		register.receivePayment(scan.nextDouble());
 		double change=register.giveChange();
