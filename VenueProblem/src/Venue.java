@@ -16,16 +16,18 @@ public class Venue
 			}
 		}
 	}
-	public void seatLookup(int secNum, int rowNum, int seatNum)
+	public boolean seatLookup(int secNum, int rowNum, int seatNum)
 	{
+		boolean isTaken;
 		if(allSeats[secNum][rowNum][seatNum]==false)
 		{
 			allSeats[secNum][rowNum][seatNum]=true;
-			System.out.println(secNum+"-"+rowNum+"-"+seatNum+" seat awarded");
+			isTaken=false;
 		}
 		else
 		{
-			System.out.println(secNum+"-"+rowNum+"-"+seatNum+" seat taken");
+			isTaken=true;
 		}
+		return isTaken;
 	}
 }
