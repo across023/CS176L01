@@ -59,6 +59,10 @@ public class ComboLock
 			}
 		}
 	}
+	public boolean getLockStatus()
+	{
+		return lockStatus;
+	}
 	public void lockReset()
 	{
 		if(lockStatus==false)
