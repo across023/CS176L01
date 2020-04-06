@@ -6,6 +6,7 @@ public class Father
 	public Father(String name, String[] gene)
 	{
 		fFirstName=name;
-		
+		fGene = new String[5];
+		fGene=gene;
 	}
 }

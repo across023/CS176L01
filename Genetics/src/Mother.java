@@ -7,6 +7,7 @@ public class Mother extends FamilyExpressions
 	{
 		super(ch,ex,comb);
 		mFirstName=name;
-		
+		mGene = new String[5];
+		mGene=gene;
 	}
 }
