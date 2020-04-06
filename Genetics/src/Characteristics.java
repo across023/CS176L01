@@ -1,5 +1,10 @@
 
 public class Characteristics 
 {
-	public String charactistic[];
+	private String characteristic[];
+	public Characteristics(String[] ch)
+	{
+		characteristic = new String[5];
+		characteristic=ch;
+	}
 }
