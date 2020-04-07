@@ -1,7 +1,7 @@
 
 public class Characteristics 
 {
-	private String characteristic[];
+	public String characteristic[];
 	public Characteristics(String[] ch)
 	{
 		characteristic = new String[5];

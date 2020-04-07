@@ -13,9 +13,9 @@ public class Child
 		String[] ch = {"Eye color","Hair color","Sex","Height","Vision"};
 		Mother mother = new Mother(ch,exp,comb,"mom",noValues);
 		Father father = new Father("dad",noValues);
-		String[] mGenes = new String[4];
-		String[] fGenes = new String[4];
-		for(int i=0;i<4;i++)
+		String[] mGenes = new String[5];
+		String[] fGenes = new String[5];
+		for(int i=0;i<5;i++)
 		{
 			int newGene=gene.nextInt(100)+1;
 			if(newGene<51)
@@ -38,5 +38,15 @@ public class Child
 		}
 		mother.changeMother(mGenes);
 		father.changeFather(fGenes);
+		for(int i=0;i<5;i++)
+		{
+			for(int j=0;j<4;j++)
+			{
+				if((mother.mGene[i]+father.fGene[i]).contentEquals(mother.combination[j]))
+				{
+					System.out.println(mother.characteristic[i]+" "+mother.expression[i][j]);
+				}
+			}
+		}
 	}
 }
