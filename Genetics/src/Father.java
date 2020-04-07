@@ -9,4 +9,8 @@ public class Father
 		fGene = new String[5];
 		fGene=gene;
 	}
+	public void changeFather(String[] f)
+	{
+		fGene=f;
+	}
 }

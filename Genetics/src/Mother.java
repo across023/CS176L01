@@ -10,4 +10,8 @@ public class Mother extends FamilyExpressions
 		mGene = new String[5];
 		mGene=gene;
 	}
+	public void changeMother(String[] m)
+	{
+		mGene=m;
+	}
 }
