@@ -34,5 +34,9 @@ public class ButtonListener implements ActionListener
 		{
 			System.out.println(metric+" Country Area is "+result);
 		}
+		if(objects[0].getClass().getName().equals("Quiz"))
+		{
+			System.out.println(metric+" Quiz Grade is "+result);
+		}
 	}
 }
